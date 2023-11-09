@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Get Weather</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Weather Form:</h1>
+
+    <form action="#" th:action="@{/weather}" method="post">
+        <label for="query">Enter City Name or Zip Code: </label>
+        <input id="query" type="text" name="query" required/>
+        <br>
+        <input type="submit" value="Submit"/>
+    </form>
+</div>
+</body>
+</html>
