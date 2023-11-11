@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Weather Result</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Weather Result:</h1>
+
+    <h2>Location info: </h2>
+    <p th:text="'Name: ' + ${weather.location.name}"></p>
+    <p th:text="'Region: ' + ${weather.location.region}"></p>
+    <p th:text="'Country: ' + ${weather.location.country}"></p>
+
+    <h2>Current Weather:</h2>
+    <p th:text="'Temperature: ' + ${weather.current.tempC} + ' degree celsius'"></p>
+    <p th:text="'Humidity: ' + ${weather.current.humidity} + '%'"></p>
+    <p th:text="'Description: ' + ${weather.current.condition.text}"></p>
+</div>
+</body>
+</html>
