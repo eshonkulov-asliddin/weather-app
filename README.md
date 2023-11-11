@@ -29,7 +29,7 @@ Replace `db_url`, `your_username` and `your_password` with your actual MySQL dat
 ## Running the Application
 1. Clone the repository:
 ```bash
-git clone https://github.com/eshonkulov-asliddin/weather-app-with-gpt.git
+git clone https://github.com/eshonkulov-asliddin/weather-app.git
 ```
 2. Navigate into the project directory:
 ```bash
